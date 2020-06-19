@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@media (min-width:34em) {
+    .card-deck > .card
+    {
+        width: 29%;
+        flex-wrap: wrap;
+        flex: initial; 
+    }
+}
