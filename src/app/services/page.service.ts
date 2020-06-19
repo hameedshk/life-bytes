@@ -12,7 +12,7 @@ import { Tile } from '../model/tile';
 export class PageService {
     constructor(private http: HttpClient) { }
 
-    getFunctionList(userid: string): Observable<Tile> {
-        return this.http.get<Tile>('../../assets/function.json');
+    getTileList(): Observable<Tile> {
+        return this.http.get<Tile>('../../assets/json/tiles.json');
     }
 }

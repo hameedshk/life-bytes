@@ -1,8 +1,21 @@
 .card{
-    margin: 5px;
+    margin: 2px !important;
 }
 
+// .card-deck{
+//     margin-bottom: 10px;
+// }
 a {
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
+
+// @media (min-width:34em) {
+//     .card-deck > .card
+//     {
+//         width: 29%;
+//         flex-wrap: wrap;
+//         flex: initial; 
+//     }
+// }

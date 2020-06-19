@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header/header.component';
 import { BodyComponent } from './layout/body/body/body.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { PageService } from './services/page.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,9 +19,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
