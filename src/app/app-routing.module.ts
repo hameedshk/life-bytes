@@ -4,12 +4,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
-    component: DashboardComponent,
-    // loadChildren: './pages/dashboard/dashboard.module#DashboardModule',
+    path: 'dashboard',
+     loadChildren: './pages/dashboard/dashboard.module#DashboardModule',
     // canActivate: [RoleGuardService],
-    data: {
-    }
   },
   {
     path: '**',

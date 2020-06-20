@@ -8,21 +8,22 @@ import { BodyComponent } from './layout/body/body/body.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PageService } from './services/page.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent,
-    DashboardComponent
+    BodyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DashboardModule
   ],
-  providers: [PageService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

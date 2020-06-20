@@ -4,9 +4,9 @@
       <a (click)="titleClick(tile.id)">
         <input type="hidden" name="tileid" value="{{tile.id}}" />
         <div class="card h-100" style="max-height: 12rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
+          <!-- <img class="card-img-top" [src]='tile.imgPathl' alt="{{tile.imgAltName}}" /> -->
           <div class="card-body">
-            <h5 class="card-title ">{{tile.title}}</h5>
+            <h5 class="card-title">{{tile.title}}</h5>
             <p class="card-text">{{tile.description}}</p>
             <p class="card-text"><small class="text-muted">{{tile.date}}</small></p>
           </div>
