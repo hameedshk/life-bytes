@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "title": "Indian Income Tax",
+        "imgPath": "../../../assets/img/bulb.png",
+        "imgAltName":"bulb",
+        "quote":"Qoutes -     some good quotes to understand Apr 19 2017 Would like to have a blueprint for resolvers they are commonly used for getting data when going to a route. ng g resolver config  config.resolver Understanding Resolvers in Angular codeburst things we need ot tod what need  to be done I raise above all and go",
+        "tip":"Tips - some tips to understand economy",
+        "why": "WHY  -  A short detail about Indian Income Tax , range and tips to invest and save",
+        "what":"what ---- ",
+        "how":"how ---- ",
+        "date": "Friday, 19 June 2020"
+    }
+    
+]
