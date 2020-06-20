@@ -21,8 +21,6 @@ export class DashboardComponent implements OnInit {
   }
 
   titleClick(id: number) {
-    console.log('tile clicked ' + id);
-    // this.router.navigate(['/detail']);
     this.router.navigateByUrl('dashboard/detail', { queryParams: { 'id': id } });
 
   }

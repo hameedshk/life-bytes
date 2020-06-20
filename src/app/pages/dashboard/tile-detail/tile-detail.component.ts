@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { PageService } from 'src/app/services/page.service';
+import { TileDetail } from 'src/app/model/TileDetail';
 
 @Component({
   selector: 'app-tile-detail',
@@ -7,13 +9,17 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./tile-detail.component.scss']
 })
 export class TileDetailComponent implements OnInit {
-
-  constructor(private _router: Router, private _route: ActivatedRoute) { }
+  titleId:number;
+  titleDetails:TileDetail;
+  constructor(private _router: Router, private _route: ActivatedRoute, private pageService: PageService) { }
 
   ngOnInit() {
-    const tileId=this._route.snapshot.queryParamMap.get('id');
-    console.log(tileId);
-    
+    const tileid = this._route.snapshot.paramMap.get('id');
+    this.titleId=Number(tileid);
+    console.log(this.titleId);
+    const tileListData=this._route.snapshot.data['tileData'];
+    this.titleDetails=tileListData.filter(x=>x.id==tileid)[0];
+
   }
 
 }

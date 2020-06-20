@@ -1,7 +1,7 @@
 <div class="card-deck">
   <div class="row mt-2">
     <div class="col-md-4" *ngFor="let tile of tiles;let i=index">
-      <a (click)="titleClick(tile.id)">
+      <a [routerLink]="['/dashboard/detail',tile.id]">
         <input type="hidden" name="tileid" value="{{tile.id}}" />
         <div class="card h-100" style="max-height: 12rem;">
           <!-- <img class="card-img-top" [src]='tile.imgPathl' alt="{{tile.imgAltName}}" /> -->
