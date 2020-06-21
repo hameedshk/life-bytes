@@ -4,7 +4,7 @@
          <nav id="navbar"
             class="navbar navbar-expand-sm navbar-dark align-items-start flex-sm-column flex-row navbar-fixed-top">
             <a class="navbar-brand" href="#">
-               <header>Documentation</header>
+               <header>Glossary</header>
             </a>
             <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
                <span class="navbar-toggler-icon"></span>
@@ -82,15 +82,12 @@
          <div class="row">
             <div class="col-md-12">
                <section id="Introduction" class="main-section">
-                  <header>
+                  <!-- <header>
                      <h2>Introduction</h2>
-                  </header>
-                  <h4>Planning For Web Design</h4>
-                  <p>Developing a website is like building a house. When building a house, you ask an architect to
-                     draw up the plans. The architect will obtain building permits, city licenses, oversee a
-                     geological survey and more… All before any actual construction begins. Similarly, Website
-                     Definition Documents act as your website’s architectural blueprint. By using these documents,
-                     you and your design agency can build a strong foundation.</p>
+                  </header> -->
+                  <h4>{{titleDetails.title}}</h4>
+                  <p [innerHTML]="titleDetails.what"></p>
+                  <p [innerHTML]="titleDetails.history"></p>
                </section>
                <section id="Methodology" class="main-section">
                   <header>
