@@ -14,10 +14,10 @@ export class PageService {
     constructor(private http: HttpClient) { }
 
     getTileList(): Observable<Tile> {
-        return this.http.get<Tile>('../../assets/json/tiles.json');
+        return this.http.get<Tile>('assets/json/tiles.json');
     }
 
     getTileDetail(): Observable<TileDetail[]> {
-        return this.http.get<TileDetail[]>('../../assets/json/tiledetail.json');
+        return this.http.get<TileDetail[]>('assets/json/tiledetail.json');
     }
 }
